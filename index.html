@@ -10,6 +10,8 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
     <title>untitledTitle</title>
 </head>
 
@@ -34,11 +36,15 @@
             <div class="aboutme-bubble">
                 <img src="img/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.jpg" alt="owner of the page / Photo by Mateus Campos Felipe on Unsplash" class="about-img">
                 <h1>Welcome to untitledTitle.</h1>
-                <p>Duis sed urna vel ante sollicitudin viverra. Aenean sodales nisi ut fringilla gravida. Donec imperdiet ullamcorper metus, non vulputate ante consectetur eu. Nam nulla nibh, semper sit amet quam vel, interdum placerat elit. Ut tempus, erat id venenatis consequat, nisi nibh efficitur risus, id tincidunt nisi arcu ut justo. Vivamus vitae leo vel lorem imperdiet pharetra non venenatis orci. Ut porta risus lorem, quis commodo lectus aliquam a. Nam facilisis et urna ut feugiat. Phasellus eu elit nisi.</p>
+                <p>Duis sed urna vel ante sollicitudin viverra. Aenean sodales nisi ut fringilla gravida. Donec imperdiet ullamcorper metus, non vulputate ante consectetur eu. Nam nulla nibh, semper sit amet quam vel, interdum placerat elit. Ut tempus, erat id venenatis consequat, nisi nibh efficitur risus, id tincidunt nisi arcu ut justo. Vivamus vitae leo vel lorem imperdiet.</p>
             </div>
         </section>
 
+        <div class="project-container">
+        <div class="project-title">
         <h2>Let's see some action - Check my work</h2>
+        </div>
+        </div>
 
         <section class="project-section">
             <div class="projects">
@@ -63,28 +69,31 @@
             </div>
         </section>
 
-        <div class="more-button">
-            <button>Click for more..</button>
+        <div class="button">
+            <a href="#" class="more-button">More..</a>
         </div>
 
         <section class="contact">
             <h3>CONTACT</h3>
-            <form>
-                <label for="name">Name:</label>
+            <form class="contact-form">
+                <label for="name">Name:</label><br>
                 <input type="text" id="name" name="name"><br>
-                <label for="email">E-mail address:</label>
-                <input type="email" id="email" name="email">
+                <label for="email">E-mail address:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="text" textarea="500">Message:</label><br>
+                <input type="text" id="message" name="message">
             </form>
         </section>
     </main>
 
     <footer>
         <ul class="social-links">
-            <li><a href="https://github.com/nicolekovacs"></a></li>
-            <li><a href="https://twitter.com/nessiekovacs"></a></li>
-            <li><a href="https://instagram.com/nessiekovacs"></a></li>
+            <p><a href="https://github.com/nicolekovacs" target="_blank"><img src="img/github-square-brands.svg" alt="github logo" class="social-logos"></a></p>
+            <p><a href="https://twitter.com/nessiekovacs" target="_blank"><img src="img/twitter-square-brands.svg" alt="twitter logo" class="social-logos"></a></p>
+            <p><a href="https://linkedin.com/in/nicolekovacs" target="_blank"><img src="img/linkedin-brands.svg" alt="linkedin logo" class="social-logos"></a></p>
+            <p><a href="https://instagram.com/nessiekovacs" target="_blank"><img src="img/instagram-square-brands.svg" alt="instagram logo" class="social-logos"></a></p>
         </ul>
-        <h4>made with love.</h4>
+        <p>made with <span class="emoji">💖 & ☕</span> by nicole k.</p>
     </footer>
 </body>
 </html>
