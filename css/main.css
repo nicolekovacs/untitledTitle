@@ -145,10 +145,19 @@ a {
 }
 
 .project-title {
-    border: 3px solid #4ECCA3;
+    border: 3px solid var(--color-accent);
     max-width: 60%;
     margin: 40px 0;
     padding: 0 30px;
+}
+
+.project-img {
+    border: solid 3px var(--color-accent);
+    transition: transform .2s;
+}
+
+.project-img:hover {
+   transform: scale(0.8, 0.8);
 }
 
 .button {
