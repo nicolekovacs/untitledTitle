@@ -99,13 +99,12 @@ ul {
     padding: 20px;
     margin-left: 10px;
     font-size: var(--fs-h3);
+    color: var(--color-light);
     border: 3px solid #4ECCA3;
 }
 
 .about-img {
     border-radius: 50%;
-    /* box-shadow: 0.25em 0.25em 0.75em rgba(0,0,0,25),
-    0.125em 0.125em 0.25em rgba(0,0,0,15); */
     margin-left: 60;
     padding: 25px;
     width: 30%;
@@ -290,3 +289,26 @@ ul {
     text-align: center;
     color: var(--color-light);
  }
+
+ /* Project pages */
+
+.project-showcase img {
+    width: 50%;
+    margin: 30px;
+}
+
+.project-individual {
+    display: flex;
+}
+
+.project-individual p {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 10px;
+    margin: 0;
+    color: var(--color-light);
+    font-size: var(--fs-body);
+    line-height: 22px;
+}
