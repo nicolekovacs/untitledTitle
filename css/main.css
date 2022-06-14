@@ -297,18 +297,32 @@ ul {
     margin: 30px;
 }
 
-.project-individual {
+.project-top,
+.project-bottom {
     display: flex;
 }
 
-.project-individual p {
-    width: 40%;
+.project-top p {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    width: 40%;
     padding: 10px 10px;
     margin: 0;
     color: var(--color-light);
     font-size: var(--fs-body);
     line-height: 22px;
 }
+
+.project-bottom p {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 40%;
+    padding: 10px 10px;
+    margin: 0 20px;
+    color: var(--color-light);
+    font-size: var(--fs-body);
+    line-height: 22px;
+}
+
