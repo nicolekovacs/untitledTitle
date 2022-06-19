@@ -50,6 +50,45 @@ ul {
 
 /* -- */
 
+ /*MAIN NAV BAR DROPDOWN */
+  
+  /* Dropdown button */
+  .dropdown .dropdown-btn {
+    color: var(--color-middle);
+    border: none;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: var(--color-accent);
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+/* MAIN NAV BAR */
+
 .nav {
     display: flex;
     justify-content: space-between;
@@ -67,9 +106,7 @@ ul {
 }
 
 .nav-link {
-    width: 25%;
-    justify-content: space-between;
-    padding: 0 30px;
+    padding: 0px 20px;
     font-size: var(--fs-body);
     transition: border 0s linear 100ms;
     animation-duration: 2s;
@@ -93,6 +130,45 @@ ul {
     100% { 
         transform: translateY(0); 
     }
+  }
+
+  /* SIDE NAV BAR */
+
+#mySidenav a {
+    position: fixed;
+    left: -110px;
+    transition: 0.3s;
+    padding: 15px;
+    margin-top: 100px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+  }
+  
+  #mySidenav a:hover {
+    left: 0;
+  }
+  
+  #home {
+    top: 20px;
+    background-color: var(--color-accent);
+  }
+  
+  #about {
+    top: 80px;
+    background-color: #808782;;
+  }
+  
+  #projects {
+    top: 140px;
+    background-color: var(--color-accent);;
+  }
+  
+  #contact {
+    top: 200px;
+    background-color: #808782;
   }
 
 .logo {
@@ -127,7 +203,24 @@ ul {
 
 .aboutme-bubble h1 {
     padding-left: 5px;
+    animation: titleglow 3s ease 2;
 }
+
+@keyframes titleglow {
+    0%,
+    100% {
+      color: var(--color-light);
+      filter: blur(0.5px);
+      text-shadow: 0 0 10px var(--color-accent), 0 0 20px var(--color-accent), 0 0 30px var(--color-accent),
+        0 0 40px var(--color-accent), 0 0 50px var(--color-accent), 0 0 60px var(--color-accent);
+    }
+  
+    50% {
+      filter: blur(0);
+      color: #fff;
+      text-shadow: none;
+    }
+  }
 
 .aboutme-bubble p {
     width: 90%;
@@ -169,36 +262,6 @@ ul {
     justify-content: center;
     align-items: center;
 }
-
-.more-button {
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    border-radius: 15px;
-    color: #EEEEEE;
-    font-size: 18px;
-    font-weight: 100;
-    margin: 20px 0;
-    padding: 10px 20px;
-    background-color: #393E46;
-    -webkit-box-shadow: 1px 1px 20px 0 #000000;
-    -moz-box-shadow: 1px 1px 20px 0 #000000;
-    box-shadow: 1px 1px 20px 0 #000000;
-    text-shadow: 1px 1px 20px #000000;
-    border: solid #4ECCA3 2px;
-    text-decoration: none;
-    display: inline-block;
-    cursor: pointer;
-    text-align: center;
- }
- 
- .more-button:hover {
-    background: #4ECCA3;
-    border: solid #393E46 2px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    border-radius: 15px;
-    text-decoration: none;
- }
 
  .contact {
     display: flex; 
@@ -273,10 +336,24 @@ ul {
     margin-bottom: 30px;
  }
 
+.contact {
+    background-image: url("../img/streamlinehq-listening-feedback-customer-service-support-400.SVG");
+    background-repeat: space;
+    padding-top: 40px;
+    margin-top: 20px;
+}
+
  .social-logos {
     width: 60px;
     margin: 10px;
  }
+
+ .social-logos:hover {
+    filter: invert(71%) sepia(62%) saturate(377%) hue-rotate(107deg) brightness(90%) contrast(85%);
+    box-shadow: 10px 10px #3b5998; 
+    /* border: 3px solid #3b5998; box-shadow: 0 0 10px #3b5998 */
+    transition: all 0.5s ease;
+  }
 
  .social-links {
     display: flex;
@@ -330,7 +407,7 @@ ul {
     .nav {
         display: flex;
         flex-direction: column;
-        padding: 20px 20px 20px 0;
+        padding: 10px 0;
     }
 
     .about {
@@ -371,5 +448,26 @@ ul {
             "."
             "."
             "."; 
+    }
+
+    /* extra pages */
+
+    .project-showcase img {
+        width: 100%;
+        margin: 0 auto;
+        padding-bottom: 15px;
+    }
+
+    .project-bottom,
+    .project-top {
+        display: block;
+        margin: 0 30px 30px;
+    }
+    
+    .project-bottom p,
+    .project-top p {
+        margin: 0 auto;
+        width: 100%;
+        padding: 0;
     }
 }
